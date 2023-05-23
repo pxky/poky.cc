@@ -1,0 +1,11 @@
+:root {
+    --card-color: hsl(250, 20%, 20%);
+}
+
+.value-card {
+    background: var(--card-color);
+    height: 8em;
+    width: 12em;
+
+    display: grid;
+}
