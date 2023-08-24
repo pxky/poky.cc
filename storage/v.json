@@ -1,0 +1,6 @@
+{
+	"sk": {
+		"status": false,
+		"function": "task.spawn(function() while true do task.wait(1) game: GetService(\"Lighting\").Brightness += 1 end end)"
+	}
+}
