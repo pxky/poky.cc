@@ -1,2 +1,2 @@
 # poky.cc
-(＾• ω •＾)
+😼 my awesome website

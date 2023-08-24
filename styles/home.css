@@ -1,7 +1,4 @@
 :root {
-    --background-color: hsl(0, 0%, 0%);
-    --text-color: hsl(0, 0%, 100%);
-
     --button-color: hsl(0, 0%, 20%);
     --button-color-hover: hsl(0, 0%, 30%);
     --button-color-active: hsl(0, 0%, 40%);
