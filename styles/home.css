@@ -1,53 +1,79 @@
 :root {
-    --button-color: hsl(0, 0%, 20%);
-    --button-color-hover: hsl(0, 0%, 30%);
-    --button-color-active: hsl(0, 0%, 40%);
-    --button-color-disabled: hsl(0, 0%, 10%);
+  --button-color: hsl(0, 0%, 20%);
+  --button-color-hover: hsl(0, 0%, 30%);
+  --button-color-active: hsl(0, 0%, 40%);
+  --button-color-disabled: hsl(0, 0%, 10%);
 
-    --button-aura-1: linear-gradient(30deg, hsl(0, 100%, 50%), hsl(100, 100%, 50%));
-    --button-aura-2: linear-gradient(30deg, hsl(120, 100%, 50%), hsl(220, 100%, 50%));
-    --button-aura-3: linear-gradient(30deg, hsl(240, 100%, 50%), hsl(340, 100%, 50%));
+  --button-aura-1: linear-gradient(
+    30deg,
+    hsl(0, 100%, 50%),
+    hsl(25, 100%, 50%),
+    hsl(100, 100%, 50%),
+    hsl(175, 100%, 50%)
+  );
+  --button-aura-2: linear-gradient(
+    30deg,
+    hsl(175, 100%, 50%),
+    hsl(250, 100%, 50%),
+    hsl(325, 100%, 50%),
+    hsl(360, 100%, 50%)
+  );
 }
 
 .vl-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .vl-button {
-    color: var(--text-color);
-    border: none;
-    font-size: 1.25em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2em;
-    width: 7.5em;
-    margin: .5em;
-    padding: .4em .8em;
-    white-space: nowrap;
-    position: relative;
+  color: var(--text-color);
+  border: none;
+  font-size: 1.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 7.5em;
+  margin: 0.5em;
+  padding: 0.4em 0.8em;
+  white-space: nowrap;
+  position: relative;
 }
 
-.enabled { background: var( --button-color); cursor: pointer; }
-.enabled:hover { background: var(--button-color-hover); }
-.enabled:active { background: var(--button-color-active); }
-.disabled { background: var(--button-color-disabled); }
+.enabled {
+  background: var(--button-color);
+  cursor: pointer;
+}
+.enabled:hover {
+  background: var(--button-color-hover);
+}
+.enabled:active {
+  background: var(--button-color-active);
+}
+.disabled {
+  background: var(--button-color-disabled);
+}
 
 .aura::after {
-    content: '';
-    position: absolute;
-    height: calc(100% + 5px);
-    width: calc(100% + 5px);
-    filter: blur(5px);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  height: calc(100% + 5px);
+  width: calc(100% + 5px);
+  filter: blur(5px);
+  z-index: -1;
 }
 
-.tmm2.aura::after { background: var(--button-aura-1); }
+.tmm2.aura::after {
+  background: var(--button-aura-1);
+}
 
-.tmmx.aura::after { background: var(--button-aura-2); }
+.tmmx.aura::after {
+  background: var(--button-aura-2);
+}
 
-.mgx.aura::after { background: var(--button-aura-3); }
+.mgx.aura::after {
+  background: var(--button-aura-3);
+}
